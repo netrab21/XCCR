@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CCR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="index.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<body>
+    <section id="homePage" data-role="page">
+        <div data-role="header">
+            <div class="grid" style="position:-webkit-sticky;">
+                <div class="logo">
+
+                    <img src="logo.png">
+                </div>
+
+
+
+                <div class="overlay" id="navBar">
+                    <ul> <a class="closebtn" id="closeNav" onclick="closeNav()">&times;</a></ul>
+                    <ul>
+                        <a href="index.html" rel="external">Home</a>
+                    </ul>
+                    <ul> <a href="applyNow.html" rel="external">Apply Now</a></ul>
+                    <ul> <a href="aboutUs.html">About Us</a></ul>
+                    <ul><a href="contactUs.html" rel="external">Contact Us</a></ul>
+                </div>
+            </div>
+            <div class="sideBAr btn btn-default" onclick="openNav()"> &#9776</div>
+        </div>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("navBar").style.display = "block";
+            }
+
+            function closeNav() {
+                document.getElementById("navBar").style.display = "none";
+            }
+        </script>
+        <div class="teamHeading" style="font-size: 25px font-weight-bold;">
+            <h2>Our Management Team</h2>
+        </div>
+        <div class="grid-container-aboutUs" style="display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;            
+        background-color: #f17a0a;">
+            <div>
+                <figure>
+                    <a href="anthonyProfile.html"> <img src="anthony.PNG" style="width: 50%;border-radius: 100px;"></a>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">ANTHONY HILTON | Director</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <a href="anthonyProfile.html"> <img src="chris.PNG" style="width:50%;border-radius: 100px;"></a>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">CHRIS THOMPSON | Director</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <a href="anthonyProfile.html"> <img src="catherine.PNG" style="width: 50%;border-radius: 100px;"></a>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">CATHERINE WILLIAMS | Manager, Planning & Programming</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <a href="wayne.html"> <img src="wayne.PNG" style="width: 50%;height: 50%; border-radius:100px;"></a>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">WAYNE BRADSHAW | Regional Director, New Zealand</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <a href="anthonyProfile.html"> <img src="kailash.PNG" style="width: 50%;height: 50%; border-radius:100px;"></a>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">KAILASH AHUJA | Director</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <a href="anthonyProfile.html"> <img src="last.PNG" style="width: 50%;height: 50%; border-radius:100px;"></a>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; font-weight: bold;">SHAHID NAZIR | Manager, Estimation & Quantity Surveying</figcaption>
+                </figure>
+            </div>
+
+
+        </div>
+
+        </div>

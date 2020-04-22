@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CCR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="index.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<body>
+    <section id="homePage" data-role="page">
+        <div data-role="header">
+            <div class="grid">
+                <div class="logo">
+
+                    <img src="logo.png">
+                </div>
+
+
+
+                <div class="overlay" id="navBar">
+                    <ul> <a class="closebtn" id="closeNav" onclick="closeNav()">&times;</a></ul>
+                    <ul>
+                        <a href="index.html" rel="external">Home</a>
+                    </ul>
+                    <ul> <a href="applyNow.html" rel="external">Apply Now</a></ul>
+                    <ul> <a href="aboutUs.html" rel="external">About Us</a></ul>
+                    <ul><a href="contactUs.html" rel="external">Contact Us</a></ul>
+                </div>
+            </div>
+            <div class="sideBAr btn btn-default" onclick="openNav()"> &#9776</div>
+        </div>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("navBar").style.display = "block";
+            }
+
+            function closeNav() {
+                document.getElementById("navBar").style.display = "none";
+            }
+        </script>
+        <div class="infoBoxBid">
+            <figure>
+
+                <div><img src="Bid-White.png" class="myImg" style="width: 25%;">
+                </div>
+                <figcaption style="font-size-adjust: initial; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Bid Management & Estimation</figcaption>
+            </figure>
+            <p class="infoBoxText">At CCR, savvy bid management is one of the areas in which our experience shines. Managing the bid properly for complex projects is a matter of industry knowledge and skill. Most of all, it requires the professional experience to frame every
+                bid to fit the specific project picture. Simply stated, estimation should never be a matter of guesswork when it comes to the construction industry. Cost management begins with properly measured and comprehensively calculated estimates
+                from highly experienced industry professionals.</p>
+        </div>
+        <div class="infoBoxBid">
+            <figure>
+
+                <div><img src="Surveying-White.png" class="myImg" style="width: 25%; margin-left: auto; margin-right: auto;">
+                </div>
+                <figcaption style="font-size-adjust: initial; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Quantity Surveying</figcaption>
+            </figure>
+
+            <p class="infoBoxText">One of CCR’s core priorities is accurately, effectively and continuously managing the overall cost of every project and then staying firm within the projected budget on every job. Project success depends directly on smart cost management through
+                the design, procurement and construction phases. Our quantity surveying teams excel in advanced measurement techniques from 2D and 3D models and can live link the drawings to create an accurate fully costed BOQ in a timely and cost-efficient
+                manner.
+            </p>
+        </div>
+        <div class="infoBoxBid">
+            <figure>
+
+                <div><img src="modelling-white-icon.png" class="myImg" style="width: 25%; margin-left: auto; margin-right: auto;">
+                </div>
+                <figcaption style="font-size-adjust: initial; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Building Information & Modelling</figcaption>
+            </figure>
+
+            <p class="infoBoxText">Our Building Information Modelling (BIM) tech is a vital tool that allows for an accurate overview of every project. Digital models offer comprehensive project scenarios that can and do lend an invaluable vision of project completion. Our
+                team’s industry experience and our collaboration with BIM researchers from Western Sydney University has put CCR at an innovative edge of modelling.</p>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CCR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link href="index.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+</head>
+
+<body>
+    <section id="homePage" data-role="page">
+        <div data-role="header">
+            <div class="grid">
+                <div class="logo">
+
+                    <img src="logo.png">
+                </div>
+
+
+
+                <div class="overlay" id="navBar">
+                    <ul> <a class="closebtn" id="closeNav" onclick="closeNav()">&times;</a></ul>
+                    <ul>
+                        <a href="index.html" rel="external">Home</a>
+                    </ul>
+                    <ul> <a href="applyNow.html" rel="external">Apply Now</a></ul>
+                    <ul> <a href="aboutUs.html" rel="external">About Us</a></ul>
+                    <ul><a href="contactUs.html" rel="external">Contact Us</a></ul>
+                </div>
+            </div>
+            <div class="sideBAr btn btn-default" onclick="openNav()"> &#9776</div>
+        </div>
+        </div>
+
+        <script>
+            function openNav() {
+                document.getElementById("navBar").style.display = "block";
+            }
+
+            function closeNav() {
+                document.getElementById("navBar").style.display = "none";
+            }
+        </script>
+        <div class="heading" style="font-size: 12px; text-align:center;">
+            <h2>We Design <br> framework <br> for your Success</h2>
+        </div>
+        <div class="homeGrid">
+
+
+            <div class="claim">
+
+                <figure>
+
+                    <div class="popup" onclick="openTextBox()"> <img src="contract-icon.png" class="myImg" style="width: 50%;">
+                    </div>
+                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif;">Contract Reviews</figcaption>
+                </figure>
+                <div class="textboxContent" id="myTextBoxContent">
+                    <span class="closeBtn" onclick="closePopup()">&times;</span>
+                    <p>Once you understand the risk, you can manage it and a contract review is the first step in taking control and effectively managing a construction contract. At CCR our dual qualified team apply their technical and contractual understanding
+                        to provide practical advice on the express terms of a construction contract. We can distil a hundred pages of “Voodoo” into a simple A4 flow chart with templates to be applied to predetermined situations, such as a verbal request
+                        to vary the works, or what should the project manager do if he has not been granted access to undertake a critical activity</p>
+
+                </div>
+
+                <script>
+                    function openTextBox() {
+                        document.getElementById("myTextBoxContent").style.display = "block";
+                    }
+
+                    function closePopup() {
+                        document.getElementById("myTextBoxContent").style.display = "none";
+                    }
+                </script>
+
+            </div>
+
+            <div class="project">
+                <figure>
+                    <div class="popup" onclick="openTextBoxProject()"><img src="Procurement.png" style="width: 50%;"> </a>
+                        <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif;">Procurement & Commercial Management</figcaption>
+                </figure>
+                <div class="textboxContent" id="myTextBoxContentProject">
+                    <span class="closeBtn" onclick="closePopupProject()">&times;</span>
+                    <p>At CCR we know that every construction project demands the robust commercial controls and highest level of resource (material, labour, plant and subcontractor) allocation in order to achieve successful completion. Timely procurement
+                        followed by sharp, savvy commercial management up to the completion of the project is our path to industry excellence.</p>
+
+                </div>
+
+                <script>
+                    function openTextBoxProject() {
+                        var prj = document.getElementById("myTextBoxContentProject").style.display = "block";
+
+                    }
+
+                    function closePopupProject() {
+                        document.getElementById("myTextBoxContentProject").style.display = "none";
+                    }
+                </script>
+                </div>
+
+                <div class="claimManagement">
+                    <figure>
+                        <div onclick="openTextBoxBid()"><img src="ClaimsM.png" style="width: 50%;">
+                            <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif;">Claims Management</figcaption>
+                    </figure>
+                    <div class="textboxContent" id="myTextBoxContentClaim">
+                        <span class="closeBtnClaim" onclick="closePopupClaim()">&times;</span>
+                        <p>Claims management is always a priority and one that we handle with great attention and expert care. We have the experience and we understand the importance of commercial decisions over contractual disputes. Our risk mitigation
+                            strategies deliver value to our partners and value to our future together.</p>
+
+                    </div>
+
+                    <script>
+                        function openTextBoxBid() {
+                            document.getElementById("myTextBoxContentClaim").style.display = "block";
+                        }
+
+                        function closePopupClaim() {
+                            document.getElementById("myTextBoxContentClaim").style.display = "none";
+                        }
+                    </script>
+                    </div>
+                    <div class="extension">
+                        <figure>
+                            <div onclick="openTextBoxExtension()"><img src="time.png" style="width: 50%;"> </div>
+                            <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif; ">Extension of Time and Delays Analysis</figcaption>
+                        </figure>
+                        <div class="textboxContent" id="myTextBoxContentExtension">
+                            <span class="closeBtn" onclick="closePopupExtension()">&times;</span>
+                            <p>We pride ourselves on our ability to manage time and the effect of change on any project. Our industry experience informs us that certain projects contain a measure of instability that may be greater than the existing resources
+                                can manage. At CCR we have the confidence to step in, evaluate and identify project schedules, logical sequence, duration and critical path. Our team of expert planners have the ability to convert project records into an
+                                appropriate form of delay analysis to develop an extension of time claim and/ or identify gaps which will put your project back on track to successful completion.</p>
+
+                        </div>
+
+                        <script>
+                            function openTextBoxExtension() {
+                                document.getElementById("myTextBoxContentExtension").style.display = "block";
+                            }
+
+                            function closePopupExtension() {
+                                document.getElementById("myTextBoxContentExtension").style.display = "none";
+                            }
+                        </script>
+                    </div>
+                    <div class="adjudication">
+                        <figure>
+                            <div onclick="openTextBoxBoxAdjudication()"><img src="Adjudication.png" style="width:50%;"></a>
+                                <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif;">Adjudication Claims</figcaption>
+
+                        </figure>
+                        <div class="textboxContent" id="myTextBoxContentBoxAdjudication">
+                            <span class="closeBtn" onclick="closePopupBoxAdjudication()">&times;</span>
+                            <p>Once you understand the risk, you can manage it and a contract review is the first step in taking control and effectively managing a construction contract. At CCR our dual qualified team apply their technical and contractual
+                                understanding to provide practical advice on the express terms of a construction contract. We can distil a hundred pages of “Voodoo” into a simple A4 flow chart with templates to be applied to predetermined situations,
+                                such as a verbal request to vary the works, or what should the project manager do if he has not been granted access to undertake a critical activity</p>
+
+                        </div>
+
+                        <script>
+                            function openTextBoxBoxAdjudication() {
+                                document.getElementById("myTextBoxContent").style.display = "block";
+                            }
+
+                            function closePopupBoxAdjudication() {
+                                document.getElementById("myTextBoxContent").style.display = "none";
+                            }
+                        </script>
+                        </div>
+                        <div class="expert">
+                            <figure>
+                                <div onclick="openTextBoxExpert()"><img src="Witness.png" style="width:50%;"></a>
+                                    <figcaption style="font-size-adjust: initial; font-family: Arial, Helvetica, sans-serif;">Expert Witness</figcaption>
+
+                            </figure>
+                            <div class="textboxContent" id="myTextBoxContentExpert">
+                                <span class="closeBtn" onclick="closePopupExpert()">&times;</span>
+                                <p>Matters of legal dispute or arbitration pertaining to either entitlement and/or quantum must be handled swiftly and CCR has the resources to do so. We understand the importance of an expert’s role as an independent, rather
+                                    than appearing to be a representative of the appointing lawyer. We prepare reports and opinions on most construction matters for adjudication, arbitration or litigation with subsequent attendance at the proceedings
+                                    to provide evidence as necessary.</p>
+
+                            </div>
+
+                            <script>
+                                function openTextBoxExpert() {
+                                    document.getElementById("myTextBoxContentExpert").style.display = "block";
+                                }
+
+                                function closePopupExpert() {
+                                    document.getElementById("myTextBoxContentExpert").style.display = "none";
+                                }
+                            </script>
+
+
+    </section>
+</body>
